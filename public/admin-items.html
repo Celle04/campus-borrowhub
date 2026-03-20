@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin - Manage Items - Campus BorrowHub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Manage Items</h1>
+    <form id="addItemForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="description">Description:</label>
+      <textarea id="description" required></textarea>
+
+      <label for="category">Category:</label>
+      <input type="text" id="category" required />
+
+      <label for="totalQuantity">Total Quantity:</label>
+      <input type="number" id="totalQuantity" required />
+
+      <button type="submit">Add Item</button>
+    </form>
+    <h2>Existing Items</h2>
+    <div id="itemsList"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
